@@ -1,0 +1,23 @@
+{
+  "name": "eleventy-plugin-abbr",
+  "version": "0.0.0",
+  "description": "Leverages markdown-it-abbr to generate definition-on-hover functionality for defined terms",
+  "main": "dist/index.js",
+  "types": "dist/index.s.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "markdown-it-abbr": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
