@@ -1,4 +1,3 @@
-import abbr_plugin from "markdown-it-abbr";
 import { generateAbbr } from "./generateAbbr";
 
 type DefinitionPluginOptions = {
@@ -6,7 +5,7 @@ type DefinitionPluginOptions = {
     caseSensitive?: boolean
 }
 
-export default function (eleventyConfig: any, options: DefinitionPluginOptions) {
-    eleventyConfig.amendLibrary((mdLib) => mdLib.use(abbr_plugin));
+export function AbbrPlugin(eleventyConfig: any, options: DefinitionPluginOptions) {
+    eleventyConfig.amendLibrary("md", function (mdLib) { mdLib.use(require("markdown-it-abbr")) });
     eleventyConfig.addShortcode("definitions", () => generateAbbr(options.definitions));
 }
