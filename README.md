@@ -27,6 +27,6 @@ In your Markdown content:
 
 # Overview
 
-11ty quickly turns your content and templates in HTML!
+11ty quickly turns your content and templates into HTML!
 
 ```
